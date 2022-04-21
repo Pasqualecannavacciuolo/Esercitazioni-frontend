@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validazione form</title>
+</head>
+<body>
+    <div class="container">
+        <form novalidate id="form-dati" name="form-dati"  onsubmit="return validateForm()" autocomplete="on" method="get" action="https://github.com/Pasqualecannavacciuolo">
+            
+            <h2 class="title">Form con validazione JS</h2>
+
+            <label for="nome">Nome</label><br>
+            <input type="text" id="nome" name="nome" maxlength="40"><br>
+            <small id="nome-message"></small>
+
+            <label for="matricola">Matricola</label><br>
+            <input type="number" id="matricola" name="matricola"><br>
+            <small id="matricola-message"></small>
+
+            <div class="btn-wrapper">
+                <input class="btn submit" type="submit" value="Submit">
+                <input class="btn reset" type="reset" value="Reset">
+            </div>
+
+        </form>
+    </div>
+    <script type="text/javascript" src="validation.js"></script>
+</body>
+</html>
